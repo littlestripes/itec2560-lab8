@@ -1,0 +1,7 @@
+The referenced warning means that a Vue property was present in the HTML when
+the page was rendered but not set within the Vue data. In this specific
+situation, it's technically safe to ignore it as it won't derail the execution
+of your code or the rendering of the page, but it won't function as intended
+since Vue won't be able to access it. It can be fixed by ensuring that your
+Vue code contains a definition for the property and that the property is
+present within the app's return statement.
